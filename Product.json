@@ -2,41 +2,43 @@
 
   {
 
-    "id": "PROD123",
+    "id": "PROD001",
 
-    "title": "Wireless Headphones",
-
-    "description": "Noise-cancelling over-ear headphones",
+    "title": "Infinity Snatched Belt",
 
     "link": "https://www.infinityhoop.com/products/infinity-snatched-belt",
 
-    "image": "https://www.infinityhoop.com/cdn/shop/products/1.png?v=1754542769",
+    "image_link": "https://www.infinityhoop.com/cdn/shop/products/1.png?v=1754542769",
 
-    "price": "59.99",
-
-    "currency": "USD",
-
-    "availability": "in stock"
+    "description": "A premium waist training belt designed for comfort and results."
 
   },
 
   {
 
-    "id": "PROD456",
+    "id": "PROD002",
 
-    "title": "Smartwatch",
-
-    "description": "Fitness tracking smartwatch with heart rate monitor",
+    "title": "Infinity Hoop Plus",
 
     "link": "https://www.infinityhoop.com/products/infinity-hoop-plus",
 
-    "image": "https://images-na.ssl-images-amazon.com/images/I/51c51H2IBcL._SL500_._AC_SL500_.jpg",
+    "image_link": "https://images-na.ssl-images-amazon.com/images/I/51c51H2IBcL._SL500_._AC_SL500_.jpg",
 
-    "price": "129.99",
+    "description": "Smart fitness hoop with adjustable resistance for effective workouts."
 
-    "currency": "USD",
+  },
 
-    "availability": "in stock"
+  {
+
+    "id": "PROD003",
+
+    "title": "Wireless Headphones",
+
+    "link": "https://yourstore.com/products/wireless-headphones",
+
+    "image_link": "https://yourstore.com/images/wireless-headphones.jpg",
+
+    "description": "Noise-cancelling over-ear headphones with long battery life."
 
   }
 
