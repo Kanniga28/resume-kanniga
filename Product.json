@@ -1,49 +1,44 @@
-{
+[
 
-  "items": [
+  {
 
-    {
+    "id": "PROD123",
 
-      "id": "PROD123",
+    "title": "Wireless Headphones",
 
-      "title": "Wireless Headphones",
+    "description": "Noise-cancelling over-ear headphones",
 
-      "description": "Noise-cancelling over-ear headphones",
+    "link": "https://www.infinityhoop.com/products/infinity-snatched-belt",
 
-      "link": "https://www.infinityhoop.com/products/infinity-snatched-belt",
+    "image": "https://www.infinityhoop.com/cdn/shop/products/1.png?v=1754542769",
 
-      "image": "https://www.infinityhoop.com/cdn/shop/products/1.png?v=1754542769",
+    "price": "59.99",
 
-      "price": "59.99",
+    "currency": "USD",
 
-      "currency": "USD",
+    "availability": "in stock"
 
-      "availability": "in stock"
+  },
 
-    },
+  {
 
-    {
+    "id": "PROD456",
 
-      "id": "PROD456",
+    "title": "Smartwatch",
 
-      "title": "Smartwatch",
+    "description": "Fitness tracking smartwatch with heart rate monitor",
 
-      "description": "Fitness tracking smartwatch with heart rate monitor",
+    "link": "https://www.infinityhoop.com/products/infinity-hoop-plus",
 
-      "link": "https://www.infinityhoop.com/products/infinity-hoop-plus",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51c51H2IBcL._SL500_._AC_SL500_.jpg",
 
-      "image": "https://images-na.ssl-images-amazon.com/images/I/51c51H2IBcL._SL500_._AC_SL500_.jpg",
+    "price": "129.99",
 
-      "price": "129.99",
+    "currency": "USD",
 
-      "currency": "USD",
+    "availability": "in stock"
 
-      "availability": "in stock"
+  }
 
-    }
-
-  ]
-
-}
-
+]
  
