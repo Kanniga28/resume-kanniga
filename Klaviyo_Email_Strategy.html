@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Abandoned Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    img {
+      border: 0;
+      display: block;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .btn {
+      background-color: #000000;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      display: inline-block;
+    }
+	@media only screen and (min-width: 320px) and (max-width: 380px)  {
+	.btn1 {
+	font-size:14px;
+	}
+	}
+	
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#ffffff;">
+
+<!-- MAIN WRAPPER -->
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+<tr>
+<td align="center">
+
+<!-- EMAIL CONTAINER -->
+<table width="600" cellpadding="0" cellspacing="0" style="max-width:600px; width:100%;">
+
+  <!-- HEADER (UNIVERSAL BLOCK) -->
+  <tr>
+          <td align="center" style="padding:20px; font-size:22px; font-weight:bold;">
+            INFINITY HOOP
+          </td>
+        </tr>
+
+  <!-- HEADLINE -->
+  <tr>
+    <td align="center" style="padding:20px 30px; font-family:Arial, sans-serif; background: linear-gradient(135deg,#f7b7e2,#bfe9ff);">
+      <table width="100%" style="background:#ffffff; border:2px solid #000; border-radius:20px;">
+              <tr>
+                <td class="center" style="padding:30px;">
+                  <h1 style="margin:0 0 10px; font-size:26px;">
+                    Your cart is still waiting for you…
+                  </h1>
+                  <p style="margin:0 0 20px; font-size:16px; font-weight:bold;">
+                    but in just a few clicks, it will be on its way to you!
+                  </p>
+                    <!--href={{ event.extra.checkout_url }}--><a href="https://infinity-hoop.com/cart" target="_blank" class="btn btn1" >CHECK OUT NOW</a>
+                </td>
+              </tr>
+      </table>
+    </td>
+  </tr>
+ 
+
+  <!-- DYNAMIC ABANDONED CHECKOUT BLOCK -->
+  <tr>
+    <td style="padding:10px 30px;">
+      <table width="100%" cellpadding="0" cellspacing="0">
+
+        <!--{% if event.extra.line_items %}
+        {% for item in event.extra.line_items %}-->
+
+        <tr>
+          <td style="padding:15px 0; border-bottom:1px solid #eeeeee;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="80" valign="top">
+				<!-- <img src="{{ item.image_url }}" alt="{{ item.product.title }}"-->
+                  <a href="https://www.infinityhoop.com/products/infinity-hoop-plus" target="_blank"><img src="https://images-na.ssl-images-amazon.com/images/I/51c51H2IBcL._SL500_._AC_SL500_.jpg"
+				   width="70" alt="INFINITY HOOP PLUS" style="display:block; border-radius:8px;"></a>
+                </td>
+                <td valign="top" style="padding-left:15px; font-family:Arial, sans-serif;">
+                  <table width="100%">
+                    <tr>
+                      <td style="font-size:16px; font-weight:bold; color:#000000;">
+                       <!-- {{ item.product.title }}-->INFINITY HOOP PLUS
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size:14px; color:#555555; padding-top:4px;">
+                       <!--  Quantity: {{ item.quantity }}--> Quantity: 1
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size:14px; color:#555555; padding-top:4px;">
+                        <!--Total: {{ item.line_price|floatformat:2 }}-->Total: $69.99
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+		
+		 <tr>
+          <td style="padding:15px 0; border-bottom:1px solid #eeeeee;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="80" valign="top">
+				<!-- <img src="{{ item.image_url }}" alt="{{ item.product.title }}"-->
+                  <a href="https://www.infinityhoop.com/products/infinity-snatched-belt" target="_blank"><img src="https://www.infinityhoop.com/cdn/shop/products/1.png?v=1754542769"
+				   width="70"
+                    
+					   alt="INFINITY SWEAT BELT"
+                       style="display:block; border-radius:8px;"></a>
+                </td>
+                <td valign="top" style="padding-left:15px; font-family:Arial, sans-serif;">
+                  <table width="100%">
+                    <tr>
+                      <td style="font-size:16px; font-weight:bold; color:#000000;">
+                       <!-- {{ item.product.title }}-->INFINITY SWEAT BELT
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size:14px; color:#555555; padding-top:4px;">
+                       <!--  Quantity: {{ item.quantity }}--> Quantity: 1
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size:14px; color:#555555; padding-top:4px;">
+                        <!--Total: {{ item.line_price|floatformat:2 }}-->Total: $29.99
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+		<tr>
+          <td style="padding:15px 0; border-bottom:1px solid #eeeeee;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="80" valign="top">
+				<!-- <img src="{{ item.image_url }}" alt="{{ item.product.title }}"-->
+                  <a href="https://www.infinityhoop.com/products/infinity-snatched-belt" target="_blank"><img src="https://www.infinityhoop.com/cdn/shop/products/FREESHAPESHIFTER_700x400px_1.png?v=1753579455"
+				   width="70"
+                    
+					   alt="DIGITAL SUCCESS KIT"
+                       style="display:block; border-radius:8px;"></a>
+                </td>
+                <td valign="top" style="padding-left:15px; font-family:Arial, sans-serif;">
+                  <table width="100%">
+                    <tr>
+                      <td style="font-size:16px; font-weight:bold; color:#000000;">
+                       <!-- {{ item.product.title }}-->DIGITAL SUCCESS KIT
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size:14px; color:#555555; padding-top:4px;">
+                       <!--  Quantity: {{ item.quantity }}--> Quantity: 1
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size:14px; color:#555555; padding-top:4px;">
+                        <!--Total: {{ item.line_price|floatformat:2 }}-->Total: $50.99
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!--{% endfor %}
+        {% endif %}-->
+
+      </table>
+    </td>
+  </tr>
+<!-- SUPPORTING COPY -->
+  <tr>
+    <td align="center" style="padding:10px 30px; font-family:Arial, sans-serif;">
+      <table width="100%">
+        <tr>
+          <td align="center" style="font-size:14px; color:#000000;">
+            Simply click through to return to your cart and complete your purchase.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- RETURN TO CART CTA -->
+  <tr>
+    <td align="center" style="padding:20px;">
+      <table cellpadding="0" cellspacing="0">
+        <tr>
+          <td bgcolor="#000000" style="border-radius:30px;">
+           <!--href="{{ event.extra.checkout_url }}--> <a href="https://infinity-hoop.com/cart" target="_blank"
+
+               style="display:inline-block; padding:14px 28px; font-family:Arial, sans-serif;
+                      font-size:15px; color:#ffffff; text-decoration:none;"
+               aria-label="Return to cart and complete purchase">
+              RETURN TO CART
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  
+
+  <!-- CLOSING LINE -->
+  <tr>
+    <td align="center" style="padding:10px 30px; padding-bottom:20px; font-family:Arial, sans-serif;">
+      <table width="100%">
+        <tr>
+          <td align="center" style="font-size:14px; color:#000000;">
+            Never think twice about wearing jeans again! ✌️
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- FOOTER (UNIVERSAL BLOCK) -->
+  <tr>
+  <td style="padding:25px; background-color:#000000;
+      background-image:url('https://images.unsplash.com/photo-1526401485004-2fda9f6d2a5d?w=1200');
+      background-size:cover; background-position:center;">
+    <table cellpadding="0" cellspacing="0" align="center">
+      <tr>
+        <!-- social icons horizontally -->
+        <td align="center" style="padding:0 8px;">
+          <a href="https://www.facebook.com/InfinityHoop" target="_blank">
+            <img src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/facebook_96.png" 
+                 width="24" alt="Facebook" style="display:block;">
+          </a>
+        </td>
+        <td align="center" style="padding:0 8px;">
+          <a href="https://www.instagram.com/InfinityHoop" target="_blank">
+            <img src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/instagram_96.png" 
+                 width="24" alt="Instagram" style="display:block;">
+          </a>
+        </td>
+        <td align="center" style="padding:0 8px;">
+          <a href="https://www.youtube.com/@InfinityHoop" target="_blank">
+            <img src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/subtleinverse/youtube_96.png" 
+                 width="24" alt="YouTube" style="display:block;">
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- footer text -->
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" style="padding-top:15px; font-family:Arial, sans-serif; font-size:12px; color:#ffffff;">
+         <!-- href={{ unsubscribe_url }}--><a href="https://www.infinityhoop.com/pages/subscription-policy" target="_blank" style="color:#1155cc;">Unsubscribe</a> | 
+         <!-- href={{ contactus_url }}--> <a href="https://www.infinityhoop.com/pages/contact-us" target="_blank" style="color:#1155cc;">Contact Us</a><br><br>
+          Copyright © 2026 Infinity Hoop<br>
+          401 E Jackson ST, Tampa FL, 33602, United States
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+
+</table>
+<!-- END EMAIL CONTAINER -->
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
