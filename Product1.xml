@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+<item>
+<id>PROD123</id>
+<title>Wireless Headphones</title>
+<description>Noise-cancelling over-ear headphones</description>
+<link>https://www.infinityhoop.com/products/infinity-snatched-belt</link>
+<image>https://www.infinityhoop.com/cdn/shop/products/1.png?v=1754542769</image>
+<price>59.99</price>
+<currency>USD</currency>
+<availability>in stock</availability>
+</item>
+<item>
+<id>PROD456</id>
+<title>Smartwatch</title>
+<description>Fitness tracking smartwatch with heart rate monitor</description>
+<link>https://www.infinityhoop.com/products/infinity-hoop-plus</link>
+<image>https://images-na.ssl-images-amazon.com/images/I/51c51H2IBcL._SL500_._AC_SL500_.jpg</image>
+<price>129.99</price>
+<currency>USD</currency>
+<availability>in stock</availability>
+</item>
+</items>
+ 
